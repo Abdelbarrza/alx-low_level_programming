@@ -3,29 +3,36 @@
 #include <time.h>
 
 /**
-* main - Entry point
-*
-* Description: determines if a number is positive, negative or zero
-* return: always 0 (success)
-*/
+ * main - Entry point
+ * main - determines if number is positive, nigatuve or zero
+ *
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
-	int n;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	if (n > 0)
-	{
-		printf("%d is positive\n", n);
-	}
-	else if (n == 0)
-	{
-		printf("%d is zero\n", n);
-	}
-	else
-	{
-		printf("%d is negative\n", n);
-	}
-	return (0);
+int n;
+
+srand(time(0));
+
+n = rand() - RAND_MAX / 2;
+
+if (n > 0)
+{
+printf("%d is positive\n", n);
+}
+
+if (n < 0)
+{
+printf("%d is negative\n", n);
+}
+
+if (n == 0)
+{
+printf("%d is zero\n", n);
+}
+
+return (0);
+
 }
