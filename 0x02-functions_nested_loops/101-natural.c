@@ -12,7 +12,7 @@
 * Return: Always 0.
 */
 
-nt main(void)
+int main(void)
 	{
 		int i, sum = 0;
 
@@ -29,4 +29,3 @@ nt main(void)
 
 		return (0);
 	}
-
